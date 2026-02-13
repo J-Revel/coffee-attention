@@ -1,0 +1,139 @@
+[gd_scene format=3 uid="uid://bpvb5dnyebkui"]
+
+[ext_resource type="Texture2D" uid="uid://btb6x2lmk36kb" path="res://graph/valentine.png" id="1_37k6a"]
+[ext_resource type="Texture2D" uid="uid://c4jes1yn1gcph" path="res://graph/bg.png" id="2_v4x4n"]
+[ext_resource type="Texture2D" uid="uid://dcsdxppu74jff" path="res://graph/table-ol.png" id="3_hntbr"]
+[ext_resource type="Texture2D" uid="uid://bfntsw25cukla" path="res://graph/ui/annoyances/annoyances_1.png" id="4_dfmm1"]
+[ext_resource type="Texture2D" uid="uid://ti17qi284ui5" path="res://graph/ui/annoyances/annoyances_2.png" id="5_clkhg"]
+[ext_resource type="Texture2D" uid="uid://c5qlm4gdees8t" path="res://graph/ui/annoyances/annoyances_3.png" id="6_768v6"]
+[ext_resource type="Texture2D" uid="uid://bqgtkd2bxnqhm" path="res://graph/ui/annoyances/annoyances_4.png" id="7_2v40m"]
+[ext_resource type="Texture2D" uid="uid://dlcebsdfo7yiu" path="res://graph/ui/annoyances/annoyances_5.png" id="8_nu1vu"]
+[ext_resource type="Texture2D" uid="uid://7tipssv85hm5" path="res://graph/ui/annoyances/annoyances_6.png" id="9_3lrc7"]
+[ext_resource type="Texture2D" uid="uid://kponssrb17xq" path="res://graph/ui/annoyances/annoyances_7.png" id="10_t53v0"]
+[ext_resource type="Texture2D" uid="uid://463inagyxknr" path="res://graph/ui/annoyances/annoyances_8.png" id="11_pu7hl"]
+[ext_resource type="Texture2D" uid="uid://chjlxmi6gaccb" path="res://graph/ui/annoyances/annoyances_9.png" id="12_kpei5"]
+[ext_resource type="Texture2D" uid="uid://brxf41tvmk13f" path="res://graph/bubbles/bubble_v1_1.png" id="13_bw6hw"]
+[ext_resource type="Texture2D" uid="uid://dpmncuf87040g" path="res://graph/bubbles/bubble_v1_2.png" id="14_ixcrd"]
+[ext_resource type="Texture2D" uid="uid://dokcimkdlxm38" path="res://graph/bubbles/bubble_v1_3.png" id="15_bkbjc"]
+[ext_resource type="Texture2D" uid="uid://bbh223ghtlh2e" path="res://graph/bubbles/bubble_v1_4.png" id="16_fdpfr"]
+[ext_resource type="Texture2D" uid="uid://cp0jihcoe7kqk" path="res://graph/bubbles/bubble_v1_5.png" id="17_tk3o1"]
+[ext_resource type="Texture2D" uid="uid://7kyruaukfu4x" path="res://graph/hand_L.png" id="18_hntbr"]
+[ext_resource type="Texture2D" uid="uid://dqe5lofglsfcb" path="res://graph/hand_R.png" id="19_dfmm1"]
+
+[node name="Maev layout" type="Node2D" unique_id=214224654]
+
+[node name="Valentine" type="Sprite2D" parent="." unique_id=973161158]
+z_index = 1
+position = Vector2(1043, 645)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_37k6a")
+
+[node name="Bg" type="Sprite2D" parent="." unique_id=560509216]
+position = Vector2(960, 540)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_v4x4n")
+
+[node name="TableOl" type="Sprite2D" parent="." unique_id=435801601]
+z_index = 2
+position = Vector2(1052, 955)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_hntbr")
+
+[node name="Annoyances1" type="Sprite2D" parent="." unique_id=1812359508]
+z_index = 3
+position = Vector2(492, 664)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_dfmm1")
+
+[node name="Annoyances2" type="Sprite2D" parent="." unique_id=1833999764]
+z_index = 3
+position = Vector2(877, 134)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_clkhg")
+
+[node name="Annoyances3" type="Sprite2D" parent="." unique_id=391744801]
+position = Vector2(1652, 501)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_768v6")
+
+[node name="Annoyances4" type="Sprite2D" parent="." unique_id=232924271]
+z_index = 3
+position = Vector2(394, 268)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_2v40m")
+
+[node name="Annoyances5" type="Sprite2D" parent="." unique_id=40899425]
+z_index = 3
+position = Vector2(763, 504)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("8_nu1vu")
+
+[node name="Annoyances6" type="Sprite2D" parent="." unique_id=894139960]
+z_index = 3
+position = Vector2(1404, 306)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("9_3lrc7")
+
+[node name="Annoyances7" type="Sprite2D" parent="." unique_id=491530034]
+z_index = 3
+position = Vector2(1500, 556)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_t53v0")
+
+[node name="Annoyances8" type="Sprite2D" parent="." unique_id=485161394]
+z_index = 3
+position = Vector2(735, 268)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("11_pu7hl")
+
+[node name="Annoyances9" type="Sprite2D" parent="." unique_id=704041039]
+z_index = 3
+position = Vector2(634, 392)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_kpei5")
+
+[node name="BubbleV11" type="Sprite2D" parent="." unique_id=230017273]
+z_index = 2
+position = Vector2(848, 352)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("13_bw6hw")
+
+[node name="BubbleV12" type="Sprite2D" parent="." unique_id=651474896]
+modulate = Color(0.7607843, 0.83137256, 0.72156864, 1)
+z_index = 2
+position = Vector2(1261, 427)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("14_ixcrd")
+
+[node name="BubbleV13" type="Sprite2D" parent="." unique_id=819142922]
+modulate = Color(1, 0.8156863, 1, 1)
+z_index = 2
+position = Vector2(1240, 352)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("15_bkbjc")
+
+[node name="BubbleV14" type="Sprite2D" parent="." unique_id=1074270046]
+modulate = Color(1, 1, 0.64705884, 1)
+z_index = 2
+position = Vector2(681, 463)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("16_fdpfr")
+
+[node name="BubbleV15" type="Sprite2D" parent="." unique_id=1012682623]
+modulate = Color(0.72156864, 1, 1, 0.75686276)
+z_index = 2
+position = Vector2(842, 250)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("17_tk3o1")
+
+[node name="HandL" type="Sprite2D" parent="." unique_id=497674009]
+z_index = 2
+position = Vector2(749, 983)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("18_hntbr")
+
+[node name="HandR" type="Sprite2D" parent="." unique_id=47122764]
+z_index = 2
+position = Vector2(1318, 948)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("19_dfmm1")
