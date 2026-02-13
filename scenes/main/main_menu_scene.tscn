@@ -59,7 +59,7 @@ texture = ExtResource("7_mbiby")
 
 [node name="Annoyances1" type="Sprite2D" parent="." unique_id=1564925292]
 z_index = 3
-position = Vector2(532, 616)
+position = Vector2(492, 664)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("8_b5ck5")
 
