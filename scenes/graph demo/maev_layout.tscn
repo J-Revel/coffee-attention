@@ -17,6 +17,8 @@
 [ext_resource type="Texture2D" uid="uid://dokcimkdlxm38" path="res://graph/bubbles/bubble_v1_3.png" id="15_bkbjc"]
 [ext_resource type="Texture2D" uid="uid://bbh223ghtlh2e" path="res://graph/bubbles/bubble_v1_4.png" id="16_fdpfr"]
 [ext_resource type="Texture2D" uid="uid://cp0jihcoe7kqk" path="res://graph/bubbles/bubble_v1_5.png" id="17_tk3o1"]
+[ext_resource type="Texture2D" uid="uid://7kyruaukfu4x" path="res://graph/hand_L.png" id="18_hntbr"]
+[ext_resource type="Texture2D" uid="uid://dqe5lofglsfcb" path="res://graph/hand_R.png" id="19_dfmm1"]
 
 [node name="Maev layout" type="Node2D" unique_id=214224654]
 
@@ -123,3 +125,15 @@ z_index = 2
 position = Vector2(842, 250)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("17_tk3o1")
+
+[node name="HandL" type="Sprite2D" parent="." unique_id=497674009]
+z_index = 2
+position = Vector2(749, 983)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("18_hntbr")
+
+[node name="HandR" type="Sprite2D" parent="." unique_id=47122764]
+z_index = 2
+position = Vector2(1318, 948)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("19_dfmm1")
