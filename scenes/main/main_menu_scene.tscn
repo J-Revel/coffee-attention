@@ -4,18 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://b4fthgi01t85q" path="res://scenes/ui/main screens/title_screen.tscn" id="1_ln1km"]
 [ext_resource type="Script" uid="uid://d030lyw43kxbd" path="res://scripts/ui/menu_container.gd" id="4_7ummm"]
 [ext_resource type="AudioStream" uid="uid://co1i60qs68cln" path="res://audio/mus_Boss_02.ogg" id="4_mv6tx"]
-[ext_resource type="Texture2D" uid="uid://btb6x2lmk36kb" path="res://graph/valentine.png" id="5_x2yvr"]
-[ext_resource type="Texture2D" uid="uid://c4jes1yn1gcph" path="res://graph/bg.png" id="6_yoo70"]
-[ext_resource type="Texture2D" uid="uid://dcsdxppu74jff" path="res://graph/table-ol.png" id="7_mbiby"]
-[ext_resource type="Texture2D" uid="uid://bfntsw25cukla" path="res://graph/ui/annoyances/annoyances_1.png" id="8_b5ck5"]
-[ext_resource type="Texture2D" uid="uid://ti17qi284ui5" path="res://graph/ui/annoyances/annoyances_2.png" id="9_slhps"]
-[ext_resource type="Texture2D" uid="uid://c5qlm4gdees8t" path="res://graph/ui/annoyances/annoyances_3.png" id="10_sg10s"]
-[ext_resource type="Texture2D" uid="uid://bqgtkd2bxnqhm" path="res://graph/ui/annoyances/annoyances_4.png" id="11_ni45c"]
-[ext_resource type="Texture2D" uid="uid://dlcebsdfo7yiu" path="res://graph/ui/annoyances/annoyances_5.png" id="12_l10tr"]
-[ext_resource type="Texture2D" uid="uid://7tipssv85hm5" path="res://graph/ui/annoyances/annoyances_6.png" id="13_55str"]
-[ext_resource type="Texture2D" uid="uid://kponssrb17xq" path="res://graph/ui/annoyances/annoyances_7.png" id="14_jm6is"]
-[ext_resource type="Texture2D" uid="uid://463inagyxknr" path="res://graph/ui/annoyances/annoyances_8.png" id="15_r15kb"]
-[ext_resource type="Texture2D" uid="uid://chjlxmi6gaccb" path="res://graph/ui/annoyances/annoyances_9.png" id="16_vd1v0"]
 
 [node name="MainMenuScene" type="Button" unique_id=534390421]
 script = ExtResource("1_1bbyl")
@@ -39,73 +27,3 @@ autoplay = true
 bus = &"Music"
 playback_type = 1
 parameters/looping = false
-
-[node name="Valentine" type="Sprite2D" parent="." unique_id=698632672]
-z_index = 1
-position = Vector2(1043, 645)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("5_x2yvr")
-
-[node name="Bg" type="Sprite2D" parent="." unique_id=47975091]
-position = Vector2(960, 540)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("6_yoo70")
-
-[node name="TableOl" type="Sprite2D" parent="." unique_id=848713562]
-z_index = 2
-position = Vector2(1052, 955)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("7_mbiby")
-
-[node name="Annoyances1" type="Sprite2D" parent="." unique_id=1564925292]
-z_index = 3
-position = Vector2(532, 616)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("8_b5ck5")
-
-[node name="Annoyances2" type="Sprite2D" parent="." unique_id=1660069686]
-z_index = 3
-position = Vector2(877, 134)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("9_slhps")
-
-[node name="Annoyances3" type="Sprite2D" parent="." unique_id=2125285503]
-position = Vector2(1652, 501)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("10_sg10s")
-
-[node name="Annoyances4" type="Sprite2D" parent="." unique_id=985508034]
-z_index = 3
-position = Vector2(394, 268)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("11_ni45c")
-
-[node name="Annoyances5" type="Sprite2D" parent="." unique_id=1256069147]
-z_index = 3
-position = Vector2(763, 504)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("12_l10tr")
-
-[node name="Annoyances6" type="Sprite2D" parent="." unique_id=1568207168]
-z_index = 3
-position = Vector2(1404, 306)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("13_55str")
-
-[node name="Annoyances7" type="Sprite2D" parent="." unique_id=533139340]
-z_index = 3
-position = Vector2(1500, 556)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("14_jm6is")
-
-[node name="Annoyances8" type="Sprite2D" parent="." unique_id=1724963098]
-z_index = 3
-position = Vector2(735, 268)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("15_r15kb")
-
-[node name="Annoyances9" type="Sprite2D" parent="." unique_id=996533226]
-z_index = 3
-position = Vector2(634, 392)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("16_vd1v0")

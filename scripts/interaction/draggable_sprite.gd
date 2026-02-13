@@ -3,7 +3,7 @@ class_name Draggable
 
 var can_grab = false
 var grabbed_offset = Vector2()
-var random_movement: float = 30
+@export var random_movement: float = 30
 var grabbed = false
 
 signal grab_start

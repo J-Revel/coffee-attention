@@ -9,6 +9,7 @@ func _process(delta: float) -> void:
 	if !_dragging && Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		if len(hovered_elements) > 0:
 			dragged_element = hovered_elements[0]
+			move_child(dragged_element, -1)
 			dragged_element.grab_start.emit()
 		_dragging = true
 	elif _dragging && !Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
