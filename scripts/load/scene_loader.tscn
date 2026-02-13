@@ -6,4 +6,5 @@
 [node name="SceneLoader" type="Node" unique_id=783416812]
 script = ExtResource("1_3bc04")
 loading_screen_scene = ExtResource("2_kxy18")
+min_load_duration = 0.0
 metadata/_custom_type_script = "uid://clj4f5tguxmoe"

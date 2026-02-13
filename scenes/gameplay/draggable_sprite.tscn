@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://boskvc8bli0pc"]
+
+[ext_resource type="Script" uid="uid://b1er2j4rx74dl" path="res://scripts/interaction/draggable_sprite.gd" id="1_wsm3m"]
+[ext_resource type="Texture2D" uid="uid://d1cy6ir7qsns8" path="res://icon.svg" id="2_ju3gw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5odut"]
+size = Vector2(128, 128)
+
+[node name="DraggableSprite" type="StaticBody2D" unique_id=1604864578]
+input_pickable = true
+constant_linear_velocity = Vector2(1.48, 0)
+constant_angular_velocity = 1.5707964
+script = ExtResource("1_wsm3m")
+metadata/_custom_type_script = "uid://b1er2j4rx74dl"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=31850884]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_5odut")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=841211032]
+texture = ExtResource("2_ju3gw")

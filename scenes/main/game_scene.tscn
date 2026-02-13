@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://br5p4hl88be2b"]
 
-[ext_resource type="Texture2D" uid="uid://d1cy6ir7qsns8" path="res://icon.svg" id="1_sdya7"]
 [ext_resource type="Script" uid="uid://d030lyw43kxbd" path="res://scripts/ui/menu_container.gd" id="2_yaarb"]
-[ext_resource type="PackedScene" uid="uid://b4fthgi01t85q" path="res://scenes/ui/main screens/title_screen.tscn" id="3_8gxuo"]
+[ext_resource type="PackedScene" uid="uid://boskvc8bli0pc" path="res://scenes/gameplay/draggable_sprite.tscn" id="3_5odut"]
+[ext_resource type="Script" uid="uid://cfxyl3n7duxn8" path="res://scripts/interaction/drag_system.gd" id="3_yaarb"]
 [ext_resource type="AudioStream" uid="uid://co1i60qs68cln" path="res://audio/mus_Boss_02.ogg" id="4_ynmmy"]
 
 [node name="GameScene" type="Node2D" unique_id=2089144198]
@@ -10,51 +10,8 @@
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2052633179]
 position = Vector2(574, 322)
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=882963256]
-position = Vector2(100, 104)
-texture = ExtResource("1_sdya7")
-
-[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1550871757]
-position = Vector2(764, 406)
-texture = ExtResource("1_sdya7")
-
-[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=958286937]
-position = Vector2(179, 352)
-texture = ExtResource("1_sdya7")
-
-[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=1478642704]
-position = Vector2(546, 248)
-texture = ExtResource("1_sdya7")
-
-[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=441208259]
-position = Vector2(767, 578)
-texture = ExtResource("1_sdya7")
-
-[node name="Sprite2D6" type="Sprite2D" parent="." unique_id=402036744]
-position = Vector2(681, 119)
-texture = ExtResource("1_sdya7")
-
-[node name="Sprite2D7" type="Sprite2D" parent="." unique_id=649956568]
-position = Vector2(879, 141)
-texture = ExtResource("1_sdya7")
-
-[node name="Sprite2D8" type="Sprite2D" parent="." unique_id=1016284743]
-position = Vector2(747, 263)
-texture = ExtResource("1_sdya7")
-
-[node name="Sprite2D9" type="Sprite2D" parent="." unique_id=213781801]
-position = Vector2(907, 281)
-texture = ExtResource("1_sdya7")
-
-[node name="Sprite2D10" type="Sprite2D" parent="." unique_id=308063763]
-position = Vector2(1011, 422)
-texture = ExtResource("1_sdya7")
-
-[node name="Sprite2D11" type="Sprite2D" parent="." unique_id=498793656]
-position = Vector2(581, 439)
-texture = ExtResource("1_sdya7")
-
 [node name="Menu Canvas" type="CanvasLayer" parent="." unique_id=731028827]
+visible = false
 
 [node name="MenuContainer" type="Control" parent="Menu Canvas" unique_id=1220276163]
 layout_mode = 3
@@ -64,7 +21,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("2_yaarb")
-starting_screen = ExtResource("3_8gxuo")
 metadata/_custom_type_script = "uid://d030lyw43kxbd"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Menu Canvas/MenuContainer" unique_id=160022940]
@@ -87,3 +43,40 @@ autoplay = true
 bus = &"Music"
 playback_type = 1
 parameters/looping = false
+
+[node name="DragSystem" type="Node2D" parent="." unique_id=501208336]
+script = ExtResource("3_yaarb")
+metadata/_custom_type_script = "uid://cfxyl3n7duxn8"
+
+[node name="DraggableSprite" parent="DragSystem" unique_id=1604864578 instance=ExtResource("3_5odut")]
+position = Vector2(62, 130)
+
+[node name="DraggableSprite2" parent="DragSystem" unique_id=1125666193 instance=ExtResource("3_5odut")]
+position = Vector2(259, 332)
+
+[node name="DraggableSprite3" parent="DragSystem" unique_id=1945795390 instance=ExtResource("3_5odut")]
+position = Vector2(537, 169)
+
+[node name="DraggableSprite4" parent="DragSystem" unique_id=1382802215 instance=ExtResource("3_5odut")]
+position = Vector2(844, 138)
+
+[node name="DraggableSprite5" parent="DragSystem" unique_id=1813085824 instance=ExtResource("3_5odut")]
+position = Vector2(306, 115)
+
+[node name="DraggableSprite6" parent="DragSystem" unique_id=1776351759 instance=ExtResource("3_5odut")]
+position = Vector2(410, 380)
+
+[node name="DraggableSprite7" parent="DragSystem" unique_id=1458119936 instance=ExtResource("3_5odut")]
+position = Vector2(169, 541)
+
+[node name="DraggableSprite8" parent="DragSystem" unique_id=1122743404 instance=ExtResource("3_5odut")]
+position = Vector2(637, 430)
+
+[node name="DraggableSprite9" parent="DragSystem" unique_id=791748153 instance=ExtResource("3_5odut")]
+position = Vector2(1034, 203)
+
+[node name="DraggableSprite10" parent="DragSystem" unique_id=705595330 instance=ExtResource("3_5odut")]
+position = Vector2(920, 515)
+
+[connection signal="mouse_entered" from="DragSystem/DraggableSprite" to="DragSystem/DraggableSprite" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="DragSystem/DraggableSprite" to="DragSystem/DraggableSprite" method="_on_mouse_exited"]

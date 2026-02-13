@@ -7,7 +7,8 @@ var _screen_cursor: int = 0
 @export var pause_screen: PackedScene
 
 func _ready():
-	show_screen(starting_screen, false)
+	if starting_screen:
+		show_screen(starting_screen, false)
 	
 func _process(delta: float):
 	if Input.is_action_just_pressed("pause"):
