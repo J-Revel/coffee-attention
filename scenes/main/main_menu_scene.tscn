@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bpu68wvywgses"]
+
+[ext_resource type="Script" uid="uid://bq1yokw7aaybl" path="res://scenes/main/main_menu_scene.gd" id="1_1bbyl"]
+[ext_resource type="PackedScene" uid="uid://b4fthgi01t85q" path="res://scenes/ui/main screens/title_screen.tscn" id="1_ln1km"]
+[ext_resource type="Script" uid="uid://d030lyw43kxbd" path="res://scripts/ui/menu_container.gd" id="4_7ummm"]
+[ext_resource type="AudioStream" uid="uid://co1i60qs68cln" path="res://audio/mus_Boss_02.ogg" id="4_mv6tx"]
+
+[node name="MainMenuScene" type="Button" unique_id=534390421]
+script = ExtResource("1_1bbyl")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1202134328]
+
+[node name="MenuContainer" type="Control" parent="CanvasLayer" unique_id=586893853]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_7ummm")
+starting_screen = ExtResource("1_ln1km")
+metadata/_custom_type_script = "uid://d030lyw43kxbd"
+
+[node name="Music Player" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=851995740]
+stream = ExtResource("4_mv6tx")
+autoplay = true
+bus = &"Music"
+playback_type = 1
+parameters/looping = false

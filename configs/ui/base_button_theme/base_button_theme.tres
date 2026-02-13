@@ -1,0 +1,46 @@
+[gd_resource type="Theme" format=3 uid="uid://c8std4tr4m33"]
+
+[ext_resource type="Texture2D" uid="uid://dubuqa6e4v1nv" path="res://graph/ui/button_hover.png" id="1_0cflh"]
+[ext_resource type="FontFile" uid="uid://be21tm6d5ne8" path="res://graph/fonts/Comic Sans MS.ttf" id="1_62xe1"]
+[ext_resource type="Texture2D" uid="uid://dhoub46dc0ncp" path="res://graph/ui/button_pressed.png" id="1_soe20"]
+[ext_resource type="Texture2D" uid="uid://dpj37kw6pvtw4" path="res://graph/ui/button_normal.png" id="3_idj83"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_upsiu"]
+texture = ExtResource("1_0cflh")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+texture_margin_bottom = 9.0
+modulate_color = Color(1.4369954, 1.4369954, 1.4369954, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0cflh"]
+texture = ExtResource("3_idj83")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+texture_margin_bottom = 9.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t6630"]
+texture = ExtResource("1_soe20")
+texture_margin_left = 5.0
+texture_margin_top = 5.0
+texture_margin_right = 5.0
+texture_margin_bottom = 9.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_idj83"]
+
+[resource]
+default_font = ExtResource("1_62xe1")
+default_font_size = 14
+Button/colors/font_color = Color(0.0627451, 0, 0.1882353, 1)
+Button/colors/font_disabled_color = Color(0.46666974, 0.46666974, 0.46666974, 0.5019608)
+Button/colors/font_hover_color = Color(1, 0.43787476, 0.6519542, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 1, 0.37254903)
+Button/constants/outline_size = 2
+Button/font_sizes/font_size = 18
+Button/styles/hover = SubResource("StyleBoxTexture_upsiu")
+Button/styles/normal = SubResource("StyleBoxTexture_0cflh")
+Button/styles/pressed = SubResource("StyleBoxTexture_t6630")
+TitleScreenButton/base_type = &"Button"
+TitleScreenButton/styles/normal = SubResource("StyleBoxTexture_idj83")
+metadata/corner_radius = 10.0
