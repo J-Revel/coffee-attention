@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://br5p4hl88be2b"]
 
+[ext_resource type="PackedScene" uid="uid://0w6fnr8v3l7h" path="res://scenes/gameplay/background_scene.tscn" id="1_tj35g"]
 [ext_resource type="Script" uid="uid://d030lyw43kxbd" path="res://scripts/ui/menu_container.gd" id="2_yaarb"]
+[ext_resource type="AudioStream" uid="uid://vry4tdwpwpds" path="res://audio/delosound-lofi-chill-483783.mp3" id="3_tj35g"]
 [ext_resource type="Script" uid="uid://cfxyl3n7duxn8" path="res://scripts/interaction/drag_system.gd" id="3_yaarb"]
-[ext_resource type="AudioStream" uid="uid://co1i60qs68cln" path="res://audio/mus_Boss_02.ogg" id="4_ynmmy"]
-[ext_resource type="Texture2D" uid="uid://c4jes1yn1gcph" path="res://graph/bg.png" id="5_8gxuo"]
 [ext_resource type="PackedScene" uid="uid://bwh7yd3xn6lha" path="res://scenes/gameplay/annoyances/annoyance_01.tscn" id="5_ynmmy"]
 [ext_resource type="PackedScene" uid="uid://cw03d3sagoasp" path="res://scenes/tests-graph/tests.tscn" id="6_ynmmy"]
 [ext_resource type="PackedScene" uid="uid://n0pgsxejqox4" path="res://scenes/gameplay/annoyances/annoyance_03.tscn" id="7_tj35g"]
@@ -12,18 +12,7 @@
 
 [node name="GameScene" type="Node2D" unique_id=2089144198]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2073483110]
-layer = -1
-
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=373854667]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("5_8gxuo")
-expand_mode = 3
-stretch_mode = 6
+[node name="Background Scene" parent="." unique_id=1256472530 instance=ExtResource("1_tj35g")]
 
 [node name="Menu Canvas" type="CanvasLayer" parent="." unique_id=731028827]
 visible = false
@@ -53,7 +42,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Music Player" type="AudioStreamPlayer" parent="Menu Canvas" unique_id=742143704]
-stream = ExtResource("4_ynmmy")
+stream = ExtResource("3_tj35g")
 autoplay = true
 bus = &"Music"
 playback_type = 1

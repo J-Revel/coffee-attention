@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://0w6fnr8v3l7h"]
+
+[ext_resource type="Texture2D" uid="uid://c4jes1yn1gcph" path="res://graph/bg.png" id="1_tvtvx"]
+[ext_resource type="Texture2D" uid="uid://btb6x2lmk36kb" path="res://graph/valentine.png" id="2_7uxsa"]
+[ext_resource type="Texture2D" uid="uid://dcsdxppu74jff" path="res://graph/table-ol.png" id="3_yii8r"]
+[ext_resource type="Texture2D" uid="uid://dqe5lofglsfcb" path="res://graph/hand_R.png" id="4_0isbx"]
+[ext_resource type="Texture2D" uid="uid://7kyruaukfu4x" path="res://graph/hand_L.png" id="5_7snli"]
+
+[node name="Background Scene" type="CanvasLayer" unique_id=1256472530]
+layer = -1
+
+[node name="background" type="TextureRect" parent="." unique_id=1555340142]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_tvtvx")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="valentine" type="TextureRect" parent="." unique_id=453893607]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -248.0
+offset_top = -582.0
+offset_right = 249.0
+offset_bottom = -36.767944
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("2_7uxsa")
+expand_mode = 1
+
+[node name="table" type="TextureRect" parent="." unique_id=1941706111]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -422.0
+offset_top = -166.0
+offset_right = 461.0
+offset_bottom = 4.867981
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset_ratio = Vector2(0.5, 0)
+texture = ExtResource("3_yii8r")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="table3" type="TextureRect" parent="table" unique_id=1825688494]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -138.5
+offset_top = -82.43399
+offset_right = 300.5
+offset_bottom = 88.43399
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0)
+texture = ExtResource("4_0isbx")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="table2" type="TextureRect" parent="table" unique_id=1525649470]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -381.5
+offset_top = -50.43399
+offset_right = 7.5
+offset_bottom = 88.43399
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0)
+texture = ExtResource("5_7snli")
+expand_mode = 1
+stretch_mode = 5
