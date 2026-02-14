@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://n0pgsxejqox4" path="res://scenes/gameplay/annoyances/annoyance_03.tscn" id="7_tj35g"]
 [ext_resource type="PackedScene" uid="uid://dmld4v7rofryj" path="res://scenes/gameplay/annoyances/annoyance_04.tscn" id="8_jck2h"]
 [ext_resource type="PackedScene" uid="uid://byfhtpucqehhl" path="res://scenes/gameplay/annoyances/annoyance_02.tscn" id="9_17w4u"]
+[ext_resource type="Script" uid="uid://dtqfatp6f4vld" path="res://scripts/level/dialogue_spawner.gd" id="10_jck2h"]
 
 [node name="GameScene" type="Node2D" unique_id=2089144198]
 
@@ -70,3 +71,12 @@ zoom = Vector2(0.305, 0.305)
 
 [node name="tests" parent="." unique_id=1174301496 instance=ExtResource("6_ynmmy")]
 position = Vector2(391, -317)
+
+[node name="DialogueSpawner" type="Node2D" parent="." unique_id=71627256 node_paths=PackedStringArray("character_container")]
+script = ExtResource("10_jck2h")
+character_container = NodePath("../DragSystem")
+line_width = 1000.0
+character_prefabs = Array[PackedScene]([ExtResource("5_ynmmy"), ExtResource("9_17w4u"), ExtResource("7_tj35g"), ExtResource("8_jck2h")])
+word_interval_range = Vector2(0.2, 0.5)
+character_thickness_range = Vector2(100, 200)
+metadata/_custom_type_script = "uid://dtqfatp6f4vld"
