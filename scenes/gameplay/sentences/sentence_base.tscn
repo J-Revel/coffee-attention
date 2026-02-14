@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bvekw1djw4i1c"]
+
+[ext_resource type="PackedScene" uid="uid://d0ogxhi4pf4t1" path="res://scenes/gameplay/annoyances/rigidbody_draggable.tscn" id="1_vwh3w"]
+[ext_resource type="Resource" uid="uid://cr733gc8ddug2" path="res://configs/draggables/sentence_draggable_01.tres" id="2_d135j"]
+[ext_resource type="Resource" uid="uid://brpnxwmltg3kw" path="res://configs/draggables/phoneme_draggable_01.tres" id="3_d135j"]
+
+[node name="Sentence" type="Node2D" unique_id=1622054766]
+
+[node name="background" parent="." unique_id=1981239010 instance=ExtResource("1_vwh3w")]
+random_movement = 10.0
+draggable_config = ExtResource("2_d135j")
+
+[node name="glyph_01" parent="." unique_id=1957062444 instance=ExtResource("1_vwh3w")]
+position = Vector2(-188, 5)
+appear_delay = 1.0
+random_movement = 10.0
+draggable_config = ExtResource("3_d135j")
+
+[node name="glyph_02" parent="." unique_id=611159077 instance=ExtResource("1_vwh3w")]
+position = Vector2(-6, 10)
+appear_delay = 1.2
+random_movement = 10.0
+draggable_config = ExtResource("3_d135j")
+
+[node name="glyph_03" parent="." unique_id=672162164 instance=ExtResource("1_vwh3w")]
+position = Vector2(189, 9)
+appear_delay = 1.4
+random_movement = 10.0
+draggable_config = ExtResource("3_d135j")

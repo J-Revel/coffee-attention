@@ -4,11 +4,12 @@
 [ext_resource type="Script" uid="uid://d030lyw43kxbd" path="res://scripts/ui/menu_container.gd" id="2_yaarb"]
 [ext_resource type="AudioStream" uid="uid://vry4tdwpwpds" path="res://audio/delosound-lofi-chill-483783.mp3" id="3_tj35g"]
 [ext_resource type="Script" uid="uid://cfxyl3n7duxn8" path="res://scripts/interaction/drag_system.gd" id="3_yaarb"]
-[ext_resource type="Texture2D" uid="uid://brxf41tvmk13f" path="res://graph/bubbles/bubble_v1_1.png" id="6_wktqh"]
+[ext_resource type="PackedScene" uid="uid://0g6vhtr2n6un" path="res://scenes/gameplay/sentences/sentence_01.tscn" id="6_wktqh"]
 [ext_resource type="PackedScene" uid="uid://cw03d3sagoasp" path="res://scenes/tests-graph/tests.tscn" id="6_ynmmy"]
-[ext_resource type="Texture2D" uid="uid://dokcimkdlxm38" path="res://graph/bubbles/bubble_v1_3.png" id="7_tj35g"]
-[ext_resource type="Texture2D" uid="uid://dujfofqr2cl1h" path="res://graph/morpheme/morphemes_6.png" id="8_tj35g"]
-[ext_resource type="PackedScene" uid="uid://cm4lkrlm5nhh1" path="res://scenes/gameplay/morphemes/morpheme_01.tscn" id="9_2kpdr"]
+[ext_resource type="PackedScene" uid="uid://dogiidju8el3m" path="res://scenes/gameplay/sentences/sentence_03.tscn" id="7_17w4u"]
+[ext_resource type="PackedScene" uid="uid://2wjq0bgay6eh" path="res://scenes/gameplay/sentences/sentence_02.tscn" id="7_tj35g"]
+[ext_resource type="PackedScene" uid="uid://buw3hkek43q5b" path="res://scenes/gameplay/sentences/sentence_04.tscn" id="8_2kpdr"]
+[ext_resource type="Script" uid="uid://dtqfatp6f4vld" path="res://scripts/level/dialogue_spawner.gd" id="8_tj35g"]
 
 [node name="GameScene" type="Node2D" unique_id=2089144198]
 
@@ -48,25 +49,29 @@ bus = &"Music"
 playback_type = 1
 parameters/looping = false
 
+[node name="DialogueSpawner" type="Node2D" parent="." unique_id=800183298 node_paths=PackedStringArray("container", "spawn_bounds_min", "spawn_bounds_max")]
+position = Vector2(860, -179)
+script = ExtResource("8_tj35g")
+spawn_interval_range = Vector2(5, 20)
+prefabs = Array[PackedScene]([ExtResource("6_wktqh"), ExtResource("7_tj35g"), ExtResource("7_17w4u"), ExtResource("8_2kpdr")])
+container = NodePath("../DragSystem")
+spawn_bounds_min = NodePath("Spawn Bounds Min")
+spawn_bounds_max = NodePath("Spawn Bounds Max")
+metadata/_custom_type_script = "uid://dtqfatp6f4vld"
+
+[node name="Spawn Bounds Min" type="Node2D" parent="DialogueSpawner" unique_id=67209505]
+position = Vector2(-2067, -455)
+
+[node name="Spawn Bounds Max" type="Node2D" parent="DialogueSpawner" unique_id=958849759]
+position = Vector2(303, 470)
+
 [node name="DragSystem" type="Node2D" parent="." unique_id=501208336]
 position = Vector2(0, -1)
 script = ExtResource("3_yaarb")
 metadata/_custom_type_script = "uid://cfxyl3n7duxn8"
 
-[node name="test1" parent="DragSystem" unique_id=454766424 instance=ExtResource("9_2kpdr")]
-position = Vector2(17, 162)
-texture = ExtResource("6_wktqh")
-
-[node name="test2" parent="DragSystem" unique_id=1981239010 instance=ExtResource("9_2kpdr")]
-position = Vector2(343, 254)
-texture = ExtResource("7_tj35g")
-
-[node name="test3" parent="DragSystem" unique_id=943429670 instance=ExtResource("9_2kpdr")]
-position = Vector2(810, 357)
-texture = ExtResource("8_tj35g")
-
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2052633179]
-zoom = Vector2(0.305, 0.305)
+zoom = Vector2(0.4, 0.4)
 
 [node name="tests" parent="." unique_id=1174301496 instance=ExtResource("6_ynmmy")]
 position = Vector2(391, -317)

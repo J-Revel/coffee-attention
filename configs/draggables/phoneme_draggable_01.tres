@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="DraggableResource" format=3 uid="uid://brpnxwmltg3kw"]
+
+[ext_resource type="Script" uid="uid://3fyykgdql2ii" path="res://scripts/interaction/draggable_resource.gd" id="1_nangb"]
+[ext_resource type="Texture2D" uid="uid://d33mn580e0uip" path="res://graph/morpheme/morphemes_1.png" id="2_1lv4x"]
+[ext_resource type="Texture2D" uid="uid://b3haykgiqjfwi" path="res://graph/morpheme/morphemes_7.png" id="2_nangb"]
+[ext_resource type="Texture2D" uid="uid://c32qkcp2fpbu7" path="res://graph/morpheme/morphemes_2.png" id="3_ve62v"]
+[ext_resource type="Texture2D" uid="uid://de4ohhuppf1wx" path="res://graph/morpheme/morphemes_3.png" id="4_kbivl"]
+[ext_resource type="Texture2D" uid="uid://dmunmar1l3i8g" path="res://graph/morpheme/morphemes_4.png" id="5_2pgmq"]
+[ext_resource type="Texture2D" uid="uid://b545fpyujlriq" path="res://graph/morpheme/morphemes_5.png" id="6_ptwf1"]
+[ext_resource type="Texture2D" uid="uid://dujfofqr2cl1h" path="res://graph/morpheme/morphemes_6.png" id="7_kkh4x"]
+[ext_resource type="Texture2D" uid="uid://frugotrqqmgo" path="res://graph/morpheme/morphemes_8.png" id="9_4am3d"]
+[ext_resource type="Texture2D" uid="uid://mqxx7s2lp48r" path="res://graph/morpheme/morphemes_9.png" id="10_m0gic"]
+[ext_resource type="Texture2D" uid="uid://dgwfuqt5bjv2k" path="res://graph/morpheme/morphemes_10.png" id="11_iwh21"]
+[ext_resource type="Texture2D" uid="uid://cshniarfnqqqf" path="res://graph/morpheme/morphemes_11.png" id="12_0grs1"]
+[ext_resource type="Texture2D" uid="uid://bncjfbfllg8fc" path="res://graph/morpheme/morphemes_12.png" id="13_jrkaj"]
+[ext_resource type="Texture2D" uid="uid://dmp67j0mnecfl" path="res://graph/morpheme/morphemes_13.png" id="14_rv17u"]
+[ext_resource type="Texture2D" uid="uid://b52xsus3v4c5e" path="res://graph/morpheme/morphemes_14.png" id="15_wjpu6"]
+[ext_resource type="Texture2D" uid="uid://66ckc45px766" path="res://graph/morpheme/morphemes_15.png" id="16_kdfyc"]
+[ext_resource type="Texture2D" uid="uid://chdqacihlays5" path="res://graph/morpheme/morphemes_16.png" id="17_gmsjw"]
+[ext_resource type="Texture2D" uid="uid://dd1m4t4ji0nk8" path="res://graph/morpheme/morphemes_17.png" id="18_o88ys"]
+
+[resource]
+script = ExtResource("1_nangb")
+textures = Array[Texture2D]([ExtResource("2_1lv4x"), ExtResource("3_ve62v"), ExtResource("4_kbivl"), ExtResource("5_2pgmq"), ExtResource("6_ptwf1"), ExtResource("7_kkh4x"), ExtResource("2_nangb"), ExtResource("9_4am3d"), ExtResource("10_m0gic"), ExtResource("11_iwh21"), ExtResource("12_0grs1"), ExtResource("13_jrkaj"), ExtResource("14_rv17u"), ExtResource("15_wjpu6"), ExtResource("16_kdfyc"), ExtResource("17_gmsjw"), ExtResource("18_o88ys")])
+appear_delay = 1.0
+metadata/_custom_type_script = "uid://3fyykgdql2ii"

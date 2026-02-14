@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="DraggableResource" format=3 uid="uid://daj2boxwubj8g"]
+
+[ext_resource type="Script" uid="uid://3fyykgdql2ii" path="res://scripts/interaction/draggable_resource.gd" id="1_3b4rq"]
+[ext_resource type="Texture2D" uid="uid://bbh223ghtlh2e" path="res://graph/bubbles/bubble_v1_4.png" id="2_3b4rq"]
+
+[resource]
+script = ExtResource("1_3b4rq")
+textures = Array[Texture2D]([ExtResource("2_3b4rq")])
+metadata/_custom_type_script = "uid://3fyykgdql2ii"

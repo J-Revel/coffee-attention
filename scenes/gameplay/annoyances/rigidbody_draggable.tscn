@@ -1,0 +1,195 @@
+[gd_scene format=3 uid="uid://d0ogxhi4pf4t1"]
+
+[ext_resource type="Script" uid="uid://beg02688jjua5" path="res://scripts/interaction/rigidbody_draggable_sprite.gd" id="1_bix2f"]
+[ext_resource type="Texture2D" uid="uid://bfntsw25cukla" path="res://graph/ui/annoyances/annoyances_1.png" id="2_qjunj"]
+[ext_resource type="Script" uid="uid://gpgqk5ij7qmc" path="res://scripts/interaction/draggable.gd" id="3_8cxjo"]
+[ext_resource type="Script" uid="uid://bmrcnhrk5bquj" path="res://scripts/interaction/random_movement_force.gd" id="4_58e5j"]
+[ext_resource type="Script" uid="uid://dr68fi005dpw6" path="res://scripts/game_feel/draggable_anims.gd" id="5_6ar84"]
+[ext_resource type="Animation" uid="uid://cd7dussffjwqu" path="res://graph/anims/draggable_appear.res" id="6_cjlvn"]
+[ext_resource type="Animation" uid="uid://cs0db1ur5wu4s" path="res://graph/anims/draggable_hover.res" id="7_c7yph"]
+[ext_resource type="AnimationLibrary" uid="uid://dbf7fy8i1erq2" path="res://graph/anims/draggable_base_library.res" id="8_mp4yt"]
+[ext_resource type="Animation" uid="uid://by0u1tdpleopc" path="res://graph/anims/draggable_grab.res" id="9_ylvs0"]
+
+[sub_resource type="Animation" id="Animation_sxnbq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("appear_anim/display_root:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("appear_anim/display_root:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("appear_anim/display_root/Sprite:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("appear_anim:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sxnbq"]
+_data = {
+&"RESET": SubResource("Animation_sxnbq"),
+&"appear": ExtResource("6_cjlvn"),
+&"hover": ExtResource("7_c7yph")
+}
+
+[sub_resource type="Animation" id="Animation_qjunj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("appear_anim/display_root/Sprite:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("appear_anim/display_root/Sprite:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_f23vt"]
+_data = {
+&"RESET": SubResource("Animation_qjunj"),
+&"grab": ExtResource("9_ylvs0")
+}
+
+[sub_resource type="Animation" id="Animation_8cxjo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%hover_anim_player/../appear_anim:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_58e5j"]
+resource_name = "appear"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%hover_anim_player/../appear_anim:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6ar84"]
+_data = {
+&"RESET": SubResource("Animation_8cxjo"),
+&"appear": SubResource("Animation_58e5j")
+}
+
+[node name="RigidBodyDraggable" type="RigidBody2D" unique_id=1981239010 node_paths=PackedStringArray("draggable", "sprite", "animations") groups=["draggable_handler"]]
+collision_mask = 0
+input_pickable = true
+gravity_scale = 0.0
+center_of_mass_mode = 1
+linear_damp = 2.0
+angular_damp = 1.0
+script = ExtResource("1_bix2f")
+pull_spring_stiffness = 200.0
+max_spring_force = 100000.0
+draggable = NodePath("draggable")
+sprite = NodePath("appear_anim/display_root/Sprite")
+animations = NodePath("BasicDraggableAnims")
+metadata/_custom_type_script = "uid://beg02688jjua5"
+
+[node name="appear_anim" type="Node2D" parent="." unique_id=1241704567]
+scale = Vector2(1e-05, 1e-05)
+
+[node name="display_root" type="Node2D" parent="appear_anim" unique_id=1790380224]
+
+[node name="Sprite" type="Sprite2D" parent="appear_anim/display_root" unique_id=432475751]
+texture = ExtResource("2_qjunj")
+
+[node name="draggable" type="Node" parent="." unique_id=2006855739 node_paths=PackedStringArray("grab_root")]
+unique_name_in_owner = true
+script = ExtResource("3_8cxjo")
+grab_root = NodePath("..")
+metadata/_custom_type_script = "uid://gpgqk5ij7qmc"
+
+[node name="RandomMovementForce" type="Node" parent="." unique_id=1915805216 node_paths=PackedStringArray("rigidbody")]
+script = ExtResource("4_58e5j")
+rigidbody = NodePath("..")
+force_intensity = 10.0
+random_turn_speed = 0.5
+metadata/_custom_type_script = "uid://bmrcnhrk5bquj"
+
+[node name="BasicDraggableAnims" type="Node" parent="." unique_id=140079402]
+script = ExtResource("5_6ar84")
+metadata/_custom_type_script = "uid://dr68fi005dpw6"
+
+[node name="hover_anim_player" type="AnimationPlayer" parent="." unique_id=582277588]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_sxnbq")
+libraries/draggable_base = ExtResource("8_mp4yt")
+
+[node name="grab_anim_player" type="AnimationPlayer" parent="." unique_id=435241902]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_f23vt")
+
+[node name="appear_anim_player" type="AnimationPlayer" parent="." unique_id=1489573136]
+unique_name_in_owner = true
+root_node = NodePath("../hover_anim_player")
+libraries/ = SubResource("AnimationLibrary_6ar84")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

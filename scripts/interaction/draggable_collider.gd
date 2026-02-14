@@ -9,9 +9,7 @@ class_name DraggableCollider
 func _generate_collider():
 	var bitmap = BitMap.new()
 	bitmap.create_from_image_alpha(sprite.texture.get_image())
-
 	var polygons = bitmap.opaque_to_polygons(Rect2(Vector2(0, 0), bitmap.get_size()))
-		
 
 	for polygon in polygons:
 		var collider = CollisionPolygon2D.new()

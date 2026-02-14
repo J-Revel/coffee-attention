@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dnd8jqwnatg5m"]
 
-[ext_resource type="PackedScene" uid="uid://d0ogxhi4pf4t1" path="res://scenes/gameplay/annoyances/annoyance_base.tscn" id="1_eb5sb"]
+[ext_resource type="PackedScene" uid="uid://d0ogxhi4pf4t1" path="res://scenes/gameplay/annoyances/rigidbody_draggable.tscn" id="1_eb5sb"]
 [ext_resource type="Texture2D" uid="uid://d33mn580e0uip" path="res://graph/morpheme/morphemes_1.png" id="2_koeao"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xh1lm"]

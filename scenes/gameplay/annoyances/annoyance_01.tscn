@@ -1,5 +1,5 @@
 [gd_scene format=3 uid="uid://bwh7yd3xn6lha"]
 
-[ext_resource type="PackedScene" uid="uid://d0ogxhi4pf4t1" path="res://scenes/gameplay/annoyances/annoyance_base.tscn" id="1_wdmjk"]
+[ext_resource type="PackedScene" uid="uid://d0ogxhi4pf4t1" path="res://scenes/gameplay/annoyances/rigidbody_draggable.tscn" id="1_wdmjk"]
 
 [node name="RigidBodyDraggable" unique_id=1981239010 instance=ExtResource("1_wdmjk")]

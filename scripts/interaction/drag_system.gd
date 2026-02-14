@@ -20,6 +20,7 @@ func _process(delta: float) -> void:
 		if dragged_element != null:
 			dragged_element.grab_end.emit()
 		dragged_element = null
+	
 		
 func _update_hover():
 	var new_hovered_element = null

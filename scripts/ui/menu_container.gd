@@ -18,6 +18,8 @@ func _process(delta: float):
 			show_screen(pause_screen, false)
 
 func show_screen(screen_prefab: PackedScene, replace_current: bool):
+	if !screen_prefab:
+		return
 	var screen: ScreenRoot = screen_prefab.instantiate()
 	add_child(screen)
 	screen.on_open.emit()

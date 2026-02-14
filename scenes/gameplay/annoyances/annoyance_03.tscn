@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://n0pgsxejqox4"]
 
-[ext_resource type="PackedScene" uid="uid://d0ogxhi4pf4t1" path="res://scenes/gameplay/annoyances/annoyance_base.tscn" id="1_us76c"]
+[ext_resource type="PackedScene" uid="uid://d0ogxhi4pf4t1" path="res://scenes/gameplay/annoyances/rigidbody_draggable.tscn" id="1_us76c"]
 [ext_resource type="Texture2D" uid="uid://ti17qi284ui5" path="res://graph/ui/annoyances/annoyances_2.png" id="2_iqnq3"]
 
 [node name="RigidBodyDraggable" unique_id=1981239010 instance=ExtResource("1_us76c")]
