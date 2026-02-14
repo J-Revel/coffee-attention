@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://b4fthgi01t85q" path="res://scenes/ui/main screens/title_screen.tscn" id="1_ln1km"]
 [ext_resource type="Script" uid="uid://d030lyw43kxbd" path="res://scripts/ui/menu_container.gd" id="4_7ummm"]
 [ext_resource type="AudioStream" uid="uid://co1i60qs68cln" path="res://audio/mus_Boss_02.ogg" id="4_mv6tx"]
+[ext_resource type="PackedScene" uid="uid://bpvb5dnyebkui" path="res://scenes/graph demo/maev_layout.tscn" id="5_mv6tx"]
 
 [node name="MainMenuScene" type="Button" unique_id=534390421]
 script = ExtResource("1_1bbyl")
@@ -27,3 +28,5 @@ autoplay = true
 bus = &"Music"
 playback_type = 1
 parameters/looping = false
+
+[node name="Maev layout" parent="." unique_id=214224654 instance=ExtResource("5_mv6tx")]
