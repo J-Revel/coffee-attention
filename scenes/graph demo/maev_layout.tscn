@@ -19,6 +19,25 @@
 [ext_resource type="Texture2D" uid="uid://cp0jihcoe7kqk" path="res://graph/bubbles/bubble_v1_5.png" id="17_tk3o1"]
 [ext_resource type="Texture2D" uid="uid://7kyruaukfu4x" path="res://graph/hand_L.png" id="18_hntbr"]
 [ext_resource type="Texture2D" uid="uid://dqe5lofglsfcb" path="res://graph/hand_R.png" id="19_dfmm1"]
+[ext_resource type="Texture2D" uid="uid://d33mn580e0uip" path="res://graph/morpheme/morphemes_1.png" id="20_lawhy"]
+[ext_resource type="Texture2D" uid="uid://c32qkcp2fpbu7" path="res://graph/morpheme/morphemes_2.png" id="21_u77ob"]
+[ext_resource type="Texture2D" uid="uid://de4ohhuppf1wx" path="res://graph/morpheme/morphemes_3.png" id="22_0k8cu"]
+[ext_resource type="Texture2D" uid="uid://dmunmar1l3i8g" path="res://graph/morpheme/morphemes_4.png" id="23_1cmuq"]
+[ext_resource type="Texture2D" uid="uid://b545fpyujlriq" path="res://graph/morpheme/morphemes_5.png" id="24_jtlkh"]
+[ext_resource type="Texture2D" uid="uid://dujfofqr2cl1h" path="res://graph/morpheme/morphemes_6.png" id="25_in75k"]
+[ext_resource type="Texture2D" uid="uid://b3haykgiqjfwi" path="res://graph/morpheme/morphemes_7.png" id="26_qbyi2"]
+[ext_resource type="Texture2D" uid="uid://frugotrqqmgo" path="res://graph/morpheme/morphemes_8.png" id="27_dpnb5"]
+[ext_resource type="Texture2D" uid="uid://mqxx7s2lp48r" path="res://graph/morpheme/morphemes_9.png" id="28_a2162"]
+[ext_resource type="Texture2D" uid="uid://dgwfuqt5bjv2k" path="res://graph/morpheme/morphemes_10.png" id="29_1f458"]
+[ext_resource type="Texture2D" uid="uid://cshniarfnqqqf" path="res://graph/morpheme/morphemes_11.png" id="30_uspdh"]
+[ext_resource type="Texture2D" uid="uid://bncjfbfllg8fc" path="res://graph/morpheme/morphemes_12.png" id="31_kyd6w"]
+[ext_resource type="Texture2D" uid="uid://dmp67j0mnecfl" path="res://graph/morpheme/morphemes_13.png" id="32_1wklo"]
+[ext_resource type="Texture2D" uid="uid://b52xsus3v4c5e" path="res://graph/morpheme/morphemes_14.png" id="33_flcps"]
+[ext_resource type="Texture2D" uid="uid://66ckc45px766" path="res://graph/morpheme/morphemes_15.png" id="34_x7nu0"]
+[ext_resource type="Texture2D" uid="uid://chdqacihlays5" path="res://graph/morpheme/morphemes_16.png" id="35_lvhfa"]
+[ext_resource type="Texture2D" uid="uid://dd1m4t4ji0nk8" path="res://graph/morpheme/morphemes_17.png" id="36_u7sli"]
+[ext_resource type="Texture2D" uid="uid://d333kqybdd3h6" path="res://graph/valentine_closed.png" id="37_swlla"]
+[ext_resource type="Texture2D" uid="uid://cr58cxfj0hb1i" path="res://graph/valentine_stare.png" id="38_r6vh2"]
 
 [node name="Maev layout" type="Node2D" unique_id=214224654]
 
@@ -41,7 +60,7 @@ texture = ExtResource("3_hntbr")
 
 [node name="Annoyances1" type="Sprite2D" parent="." unique_id=1812359508]
 z_index = 3
-position = Vector2(492, 664)
+position = Vector2(1186, 315)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_dfmm1")
 
@@ -64,7 +83,7 @@ texture = ExtResource("7_2v40m")
 
 [node name="Annoyances5" type="Sprite2D" parent="." unique_id=40899425]
 z_index = 3
-position = Vector2(763, 504)
+position = Vector2(720, 541)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("8_nu1vu")
 
@@ -137,3 +156,115 @@ z_index = 2
 position = Vector2(1318, 948)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("19_dfmm1")
+
+[node name="Morphemes1" type="Sprite2D" parent="." unique_id=955540804]
+z_index = 2
+position = Vector2(1248, 433)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("20_lawhy")
+
+[node name="Morphemes2" type="Sprite2D" parent="." unique_id=192527789]
+z_index = 2
+position = Vector2(1174, 435)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("21_u77ob")
+
+[node name="Morphemes3" type="Sprite2D" parent="." unique_id=2058010814]
+z_index = 2
+position = Vector2(1416, 371)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("22_0k8cu")
+
+[node name="Morphemes4" type="Sprite2D" parent="." unique_id=2023664500]
+z_index = 2
+position = Vector2(1321, 367)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("23_1cmuq")
+
+[node name="Morphemes5" type="Sprite2D" parent="." unique_id=1613165665]
+z_index = 2
+position = Vector2(1205, 336)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("24_jtlkh")
+
+[node name="Morphemes6" type="Sprite2D" parent="." unique_id=1109746469]
+z_index = 2
+position = Vector2(1079, 351)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("25_in75k")
+
+[node name="Morphemes7" type="Sprite2D" parent="." unique_id=1540335526]
+z_index = 2
+position = Vector2(668, 464)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("26_qbyi2")
+
+[node name="Morphemes8" type="Sprite2D" parent="." unique_id=1368193890]
+z_index = 2
+position = Vector2(777, 437)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("27_dpnb5")
+
+[node name="Morphemes9" type="Sprite2D" parent="." unique_id=228025442]
+z_index = 2
+position = Vector2(576, 451)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("28_a2162")
+
+[node name="Morphemes10" type="Sprite2D" parent="." unique_id=1169205106]
+z_index = 2
+position = Vector2(933, 342)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("29_1f458")
+
+[node name="Morphemes11" type="Sprite2D" parent="." unique_id=1301403007]
+z_index = 2
+position = Vector2(845, 365)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("30_uspdh")
+
+[node name="Morphemes12" type="Sprite2D" parent="." unique_id=1939797167]
+z_index = 2
+position = Vector2(752, 348)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("31_kyd6w")
+
+[node name="Morphemes13" type="Sprite2D" parent="." unique_id=2041758867]
+z_index = 2
+position = Vector2(1040, 244)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("32_1wklo")
+
+[node name="Morphemes14" type="Sprite2D" parent="." unique_id=1125907061]
+z_index = 2
+position = Vector2(905, 248)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("33_flcps")
+
+[node name="Morphemes15" type="Sprite2D" parent="." unique_id=1859904593]
+z_index = 2
+position = Vector2(789, 252)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("34_x7nu0")
+
+[node name="Morphemes16" type="Sprite2D" parent="." unique_id=1696976103]
+z_index = 2
+position = Vector2(703, 236)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("35_lvhfa")
+
+[node name="Morphemes17" type="Sprite2D" parent="." unique_id=1740132770]
+z_index = 2
+position = Vector2(635, 246)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("36_u7sli")
+
+[node name="ValentineClosed" type="Sprite2D" parent="." unique_id=509431243]
+position = Vector2(244, 1574)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("37_swlla")
+
+[node name="ValentineStare" type="Sprite2D" parent="." unique_id=530779181]
+position = Vector2(1000, 1564)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("38_r6vh2")
