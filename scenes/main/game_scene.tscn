@@ -1,11 +1,14 @@
 [gd_scene format=3 uid="uid://br5p4hl88be2b"]
 
 [ext_resource type="Script" uid="uid://d030lyw43kxbd" path="res://scripts/ui/menu_container.gd" id="2_yaarb"]
-[ext_resource type="PackedScene" uid="uid://boskvc8bli0pc" path="res://scenes/gameplay/draggable_sprite.tscn" id="3_5odut"]
 [ext_resource type="Script" uid="uid://cfxyl3n7duxn8" path="res://scripts/interaction/drag_system.gd" id="3_yaarb"]
 [ext_resource type="AudioStream" uid="uid://co1i60qs68cln" path="res://audio/mus_Boss_02.ogg" id="4_ynmmy"]
 [ext_resource type="Texture2D" uid="uid://c4jes1yn1gcph" path="res://graph/bg.png" id="5_8gxuo"]
+[ext_resource type="PackedScene" uid="uid://bwh7yd3xn6lha" path="res://scenes/gameplay/annoyances/annoyance_01.tscn" id="5_ynmmy"]
 [ext_resource type="PackedScene" uid="uid://cw03d3sagoasp" path="res://scenes/tests-graph/tests.tscn" id="6_ynmmy"]
+[ext_resource type="PackedScene" uid="uid://n0pgsxejqox4" path="res://scenes/gameplay/annoyances/annoyance_03.tscn" id="7_tj35g"]
+[ext_resource type="PackedScene" uid="uid://dmld4v7rofryj" path="res://scenes/gameplay/annoyances/annoyance_04.tscn" id="8_jck2h"]
+[ext_resource type="PackedScene" uid="uid://byfhtpucqehhl" path="res://scenes/gameplay/annoyances/annoyance_02.tscn" id="9_17w4u"]
 
 [node name="GameScene" type="Node2D" unique_id=2089144198]
 
@@ -57,56 +60,21 @@ playback_type = 1
 parameters/looping = false
 
 [node name="DragSystem" type="Node2D" parent="." unique_id=501208336]
+position = Vector2(0, -1)
 script = ExtResource("3_yaarb")
 metadata/_custom_type_script = "uid://cfxyl3n7duxn8"
 
-[node name="DraggableSprite" parent="DragSystem" unique_id=1604864578 instance=ExtResource("3_5odut")]
-position = Vector2(-390, 130)
+[node name="RigidBodyDraggable" parent="DragSystem" unique_id=1981239010 instance=ExtResource("5_ynmmy")]
+position = Vector2(-1200, 407)
 
-[node name="DraggableSprite2" parent="DragSystem" unique_id=1927437215 instance=ExtResource("3_5odut")]
-position = Vector2(487, -394)
+[node name="RigidBodyDraggable2" parent="DragSystem" unique_id=2133033570 instance=ExtResource("7_tj35g")]
+position = Vector2(-668, -235)
 
-[node name="DraggableSprite3" parent="DragSystem" unique_id=487568793 instance=ExtResource("3_5odut")]
-position = Vector2(-371, -318)
+[node name="RigidBodyDraggable3" parent="DragSystem" unique_id=1217449560 instance=ExtResource("8_jck2h")]
+position = Vector2(-47, 497)
 
-[node name="DraggableSprite4" parent="DragSystem" unique_id=1162400190 instance=ExtResource("3_5odut")]
-position = Vector2(-648, 20)
-
-[node name="DraggableSprite5" parent="DragSystem" unique_id=915772870 instance=ExtResource("3_5odut")]
-position = Vector2(-356, -52)
-
-[node name="DraggableSprite6" parent="DragSystem" unique_id=1971085186 instance=ExtResource("3_5odut")]
-position = Vector2(-333, 119)
-
-[node name="DraggableSprite7" parent="DragSystem" unique_id=751650004 instance=ExtResource("3_5odut")]
-position = Vector2(-549, -120)
-
-[node name="DraggableSprite8" parent="DragSystem" unique_id=1638135034 instance=ExtResource("3_5odut")]
-position = Vector2(-192, -405)
-
-[node name="DraggableSprite9" parent="DragSystem" unique_id=1834798387 instance=ExtResource("3_5odut")]
-position = Vector2(-226, -234)
-
-[node name="DraggableSprite10" parent="DragSystem" unique_id=1269364510 instance=ExtResource("3_5odut")]
-position = Vector2(-496, -219)
-
-[node name="DraggableSprite11" parent="DragSystem" unique_id=1862495312 instance=ExtResource("3_5odut")]
-position = Vector2(-587, -454)
-
-[node name="DraggableSprite12" parent="DragSystem" unique_id=1845786104 instance=ExtResource("3_5odut")]
-position = Vector2(-112, -541)
-
-[node name="DraggableSprite13" parent="DragSystem" unique_id=1311089217 instance=ExtResource("3_5odut")]
-position = Vector2(-89, -127)
-
-[node name="DraggableSprite14" parent="DragSystem" unique_id=1777239011 instance=ExtResource("3_5odut")]
-position = Vector2(-211, 169)
-
-[node name="DraggableSprite15" parent="DragSystem" unique_id=1359708397 instance=ExtResource("3_5odut")]
-position = Vector2(-200, -59)
-
-[node name="DraggableSprite16" parent="DragSystem" unique_id=699022099 instance=ExtResource("3_5odut")]
-position = Vector2(-200, -59)
+[node name="RigidBodyDraggable4" parent="DragSystem" unique_id=1883378093 instance=ExtResource("9_17w4u")]
+position = Vector2(447, -446)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2052633179]
 zoom = Vector2(0.305, 0.305)

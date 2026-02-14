@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Guilloteam Template"
-run/main_scene="uid://bpu68wvywgses"
+config/name="Coffee Attention"
+run/main_scene="uid://br5p4hl88be2b"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 

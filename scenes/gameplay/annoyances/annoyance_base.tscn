@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://d0ogxhi4pf4t1"]
+
+[ext_resource type="Script" uid="uid://beg02688jjua5" path="res://scripts/interaction/rigidbody_draggable_sprite.gd" id="1_44nuf"]
+[ext_resource type="Texture2D" uid="uid://bfntsw25cukla" path="res://graph/ui/annoyances/annoyances_1.png" id="2_ehw8m"]
+[ext_resource type="Script" uid="uid://gpgqk5ij7qmc" path="res://scripts/interaction/draggable.gd" id="3_ehw8m"]
+[ext_resource type="Script" uid="uid://bmrcnhrk5bquj" path="res://scripts/interaction/random_movement_force.gd" id="4_tsu28"]
+
+[node name="RigidBodyDraggable" type="RigidBody2D" unique_id=1981239010 node_paths=PackedStringArray("draggable")]
+collision_mask = 0
+input_pickable = true
+gravity_scale = 0.0
+linear_damp = 0.8
+angular_damp = 1.0
+script = ExtResource("1_44nuf")
+pull_spring_stiffness = 150.0
+max_spring_force = 50000.0
+draggable = NodePath("Draggable")
+metadata/_custom_type_script = "uid://beg02688jjua5"
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=432475751]
+texture = ExtResource("2_ehw8m")
+
+[node name="Draggable" type="Node" parent="." unique_id=2006855739 node_paths=PackedStringArray("grab_root")]
+script = ExtResource("3_ehw8m")
+grab_root = NodePath("..")
+metadata/_custom_type_script = "uid://gpgqk5ij7qmc"
+
+[node name="RandomMovementForce" type="Node" parent="." unique_id=1915805216 node_paths=PackedStringArray("rigidbody")]
+script = ExtResource("4_tsu28")
+rigidbody = NodePath("..")
+force_intensity = 50.0
+random_turn_speed = 0.5
+metadata/_custom_type_script = "uid://bmrcnhrk5bquj"
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

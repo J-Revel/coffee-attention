@@ -5,11 +5,17 @@ var hovered_elements: Array[Draggable]
 var dragged_element: Draggable
 var _dragging: bool
 
+	
 func _process(delta: float) -> void:
 	if !_dragging && Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		if len(hovered_elements) > 0:
-			dragged_element = hovered_elements[0]
-			move_child(dragged_element, -1)
+			var max_index = -1
+			for hovered_element in hovered_elements:
+				var index = hovered_element.grab_root.get_index()
+				if index > max_index:
+					dragged_element = hovered_element
+					max_index = index
+			move_child(dragged_element.grab_root, -1)
 			dragged_element.grab_start.emit()
 		_dragging = true
 	elif _dragging && !Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
