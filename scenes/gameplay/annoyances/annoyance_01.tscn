@@ -2,22 +2,4 @@
 
 [ext_resource type="PackedScene" uid="uid://d0ogxhi4pf4t1" path="res://scenes/gameplay/annoyances/annoyance_base.tscn" id="1_wdmjk"]
 
-[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_wdmjk"]
-points = PackedVector2Array(-122.76513, -88.99887)
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_xh1lm"]
-radius = 169.78
-
 [node name="RigidBodyDraggable" unique_id=1981239010 instance=ExtResource("1_wdmjk")]
-
-[node name="Collision Shape" parent="." index="0" unique_id=1847481755]
-position = Vector2(80.54739, -112.25974)
-rotation = 0.2617994
-shape = SubResource("ConvexPolygonShape2D_wdmjk")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="." index="1" unique_id=559397225]
-position = Vector2(-17, 125.00001)
-shape = SubResource("CircleShape2D_xh1lm")
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="5" unique_id=1901466750]
-polygon = PackedVector2Array(10, -112, -44, -36, -159, 30, -199, 88, -194, 192, -115, 268, -30, 292, 43, 292, 141, 228, 160, 184, 154, 51, 169, 34, 150, 6, 167, -44, 231, -117, 171, -220, 76, -289, 12, -297, -28, -265, -17, -192)

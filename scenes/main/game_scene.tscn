@@ -4,12 +4,11 @@
 [ext_resource type="Script" uid="uid://d030lyw43kxbd" path="res://scripts/ui/menu_container.gd" id="2_yaarb"]
 [ext_resource type="AudioStream" uid="uid://vry4tdwpwpds" path="res://audio/delosound-lofi-chill-483783.mp3" id="3_tj35g"]
 [ext_resource type="Script" uid="uid://cfxyl3n7duxn8" path="res://scripts/interaction/drag_system.gd" id="3_yaarb"]
-[ext_resource type="PackedScene" uid="uid://bwh7yd3xn6lha" path="res://scenes/gameplay/annoyances/annoyance_01.tscn" id="5_ynmmy"]
+[ext_resource type="Texture2D" uid="uid://brxf41tvmk13f" path="res://graph/bubbles/bubble_v1_1.png" id="6_wktqh"]
 [ext_resource type="PackedScene" uid="uid://cw03d3sagoasp" path="res://scenes/tests-graph/tests.tscn" id="6_ynmmy"]
-[ext_resource type="PackedScene" uid="uid://n0pgsxejqox4" path="res://scenes/gameplay/annoyances/annoyance_03.tscn" id="7_tj35g"]
-[ext_resource type="PackedScene" uid="uid://dmld4v7rofryj" path="res://scenes/gameplay/annoyances/annoyance_04.tscn" id="8_jck2h"]
-[ext_resource type="PackedScene" uid="uid://byfhtpucqehhl" path="res://scenes/gameplay/annoyances/annoyance_02.tscn" id="9_17w4u"]
-[ext_resource type="Script" uid="uid://dtqfatp6f4vld" path="res://scripts/level/dialogue_spawner.gd" id="10_jck2h"]
+[ext_resource type="Texture2D" uid="uid://dokcimkdlxm38" path="res://graph/bubbles/bubble_v1_3.png" id="7_tj35g"]
+[ext_resource type="Texture2D" uid="uid://dujfofqr2cl1h" path="res://graph/morpheme/morphemes_6.png" id="8_tj35g"]
+[ext_resource type="PackedScene" uid="uid://cm4lkrlm5nhh1" path="res://scenes/gameplay/morphemes/morpheme_01.tscn" id="9_2kpdr"]
 
 [node name="GameScene" type="Node2D" unique_id=2089144198]
 
@@ -54,29 +53,20 @@ position = Vector2(0, -1)
 script = ExtResource("3_yaarb")
 metadata/_custom_type_script = "uid://cfxyl3n7duxn8"
 
-[node name="RigidBodyDraggable" parent="DragSystem" unique_id=1981239010 instance=ExtResource("5_ynmmy")]
-position = Vector2(-1200, 407)
+[node name="test1" parent="DragSystem" unique_id=454766424 instance=ExtResource("9_2kpdr")]
+position = Vector2(17, 162)
+texture = ExtResource("6_wktqh")
 
-[node name="RigidBodyDraggable2" parent="DragSystem" unique_id=2133033570 instance=ExtResource("7_tj35g")]
-position = Vector2(-668, -235)
+[node name="test2" parent="DragSystem" unique_id=1981239010 instance=ExtResource("9_2kpdr")]
+position = Vector2(343, 254)
+texture = ExtResource("7_tj35g")
 
-[node name="RigidBodyDraggable3" parent="DragSystem" unique_id=1217449560 instance=ExtResource("8_jck2h")]
-position = Vector2(-47, 497)
-
-[node name="RigidBodyDraggable4" parent="DragSystem" unique_id=1883378093 instance=ExtResource("9_17w4u")]
-position = Vector2(447, -446)
+[node name="test3" parent="DragSystem" unique_id=943429670 instance=ExtResource("9_2kpdr")]
+position = Vector2(810, 357)
+texture = ExtResource("8_tj35g")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2052633179]
 zoom = Vector2(0.305, 0.305)
 
 [node name="tests" parent="." unique_id=1174301496 instance=ExtResource("6_ynmmy")]
 position = Vector2(391, -317)
-
-[node name="DialogueSpawner" type="Node2D" parent="." unique_id=71627256 node_paths=PackedStringArray("character_container")]
-script = ExtResource("10_jck2h")
-character_container = NodePath("../DragSystem")
-line_width = 1000.0
-character_prefabs = Array[PackedScene]([ExtResource("5_ynmmy"), ExtResource("9_17w4u"), ExtResource("7_tj35g"), ExtResource("8_jck2h")])
-word_interval_range = Vector2(0.2, 0.5)
-character_thickness_range = Vector2(100, 200)
-metadata/_custom_type_script = "uid://dtqfatp6f4vld"

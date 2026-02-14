@@ -12,6 +12,33 @@ var grabbed_offset = Vector2()
 signal grab_start
 signal grab_end
 
+@export var sprite: Sprite2D
+@export var texture: Texture2D
+
+func _generate_collider():
+	var bitmap = BitMap.new()
+	bitmap.create_from_image_alpha(sprite.texture.get_image())
+
+	var polygons = bitmap.opaque_to_polygons(Rect2(Vector2(0, 0), bitmap.get_size()))
+		
+
+	for polygon in polygons:
+		var collider = CollisionPolygon2D.new()
+		collider.polygon = polygon
+		if sprite.centered:
+			collider.position = -Vector2(bitmap.get_size())/2
+		else:
+			collider.position = sprite.position
+		add_child.call_deferred(collider)
+		collider.owner = get_tree().edited_scene_root
+
+func _ready():
+	sprite.texture = texture
+	if texture:
+		_generate_collider()
+	draggable.grab_start.connect(_on_grab_start)
+	draggable.grab_end.connect(_on_grab_end)
+
 		
 func _on_grab_start():
 	grabbed = true
@@ -19,10 +46,6 @@ func _on_grab_start():
 
 func _on_grab_end():
 	grabbed = false
-
-func _ready():
-	draggable.grab_start.connect(_on_grab_start)
-	draggable.grab_end.connect(_on_grab_end)
 
 func _physics_process(dt):
 	if grabbed:

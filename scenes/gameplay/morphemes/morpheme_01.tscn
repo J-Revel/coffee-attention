@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cm4lkrlm5nhh1"]
+
+[ext_resource type="PackedScene" uid="uid://d0ogxhi4pf4t1" path="res://scenes/gameplay/annoyances/annoyance_base.tscn" id="1_e8uu5"]
+[ext_resource type="Texture2D" uid="uid://d33mn580e0uip" path="res://graph/morpheme/morphemes_1.png" id="2_oln5f"]
+
+[node name="RigidBodyDraggable" unique_id=1981239010 instance=ExtResource("1_e8uu5")]
+
+[node name="Sprite" parent="display_root" parent_id_path=PackedInt32Array(1790380224) index="0" unique_id=432475751]
+texture = ExtResource("2_oln5f")

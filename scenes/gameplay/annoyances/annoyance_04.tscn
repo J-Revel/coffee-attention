@@ -5,8 +5,5 @@
 
 [node name="RigidBodyDraggable" unique_id=1981239010 instance=ExtResource("1_ccgko")]
 
-[node name="Sprite" parent="." index="0" unique_id=432475751]
+[node name="Sprite" parent="display_root" parent_id_path=PackedInt32Array(1790380224) index="0" unique_id=432475751]
 texture = ExtResource("2_ccgko")
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="3" unique_id=1400084494]
-polygon = PackedVector2Array(-72, 135, -110, 120, -119, 77, -116, 56, -102, 40, -87, 35, -74, 35, -78, 12, -43, 16, -57, -5, -62, -32, -36, -77, -18, -123, 31, -128, 74, -109, 109, -77, 127, -46, 115.473755, -20.327957, 105, 3, 68, 36, 17, 44, -1, 50, -17, 44, -23, 57, -19, 79, -45, 122)

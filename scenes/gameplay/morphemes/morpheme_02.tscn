@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dnd8jqwnatg5m"]
+
+[ext_resource type="PackedScene" uid="uid://d0ogxhi4pf4t1" path="res://scenes/gameplay/annoyances/annoyance_base.tscn" id="1_eb5sb"]
+[ext_resource type="Texture2D" uid="uid://d33mn580e0uip" path="res://graph/morpheme/morphemes_1.png" id="2_koeao"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xh1lm"]
+radius = 169.78
+
+[node name="RigidBodyDraggable" unique_id=1981239010 instance=ExtResource("1_eb5sb")]
+
+[node name="Sprite" parent="display_root" parent_id_path=PackedInt32Array(1790380224) index="0" unique_id=432475751]
+texture = ExtResource("2_koeao")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." index="1" unique_id=559397225]
+position = Vector2(-17, 125.00001)
+shape = SubResource("CircleShape2D_xh1lm")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="7" unique_id=1802368961]
+polygon = PackedVector2Array(-10, -87, -26, -65, -22.402283, 13.122559, -29, 27, -20.925598, 45.187622, -19, 87, 2, 100, 28, 73, 25.862274, 46.456635, 41, 35, 22.624542, 6.2545776, 16, -76)

@@ -49,16 +49,18 @@ _data = {
 &"grab": ExtResource("7_f23vt")
 }
 
-[node name="RigidBodyDraggable" type="RigidBody2D" unique_id=1981239010 node_paths=PackedStringArray("draggable")]
+[node name="RigidBodyDraggable" type="RigidBody2D" unique_id=1981239010 node_paths=PackedStringArray("draggable", "sprite")]
 collision_mask = 0
 input_pickable = true
 gravity_scale = 0.0
+center_of_mass_mode = 1
 linear_damp = 0.8
 angular_damp = 1.0
 script = ExtResource("1_44nuf")
 pull_spring_stiffness = 150.0
 max_spring_force = 50000.0
 draggable = NodePath("draggable")
+sprite = NodePath("display_root/Sprite")
 metadata/_custom_type_script = "uid://beg02688jjua5"
 
 [node name="display_root" type="Node2D" parent="." unique_id=1790380224]

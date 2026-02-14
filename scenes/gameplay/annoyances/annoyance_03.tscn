@@ -5,16 +5,5 @@
 
 [node name="RigidBodyDraggable" unique_id=1981239010 instance=ExtResource("1_us76c")]
 
-[node name="Sprite" parent="." index="0" unique_id=432475751]
+[node name="Sprite" parent="display_root" parent_id_path=PackedInt32Array(1790380224) index="0" unique_id=432475751]
 texture = ExtResource("2_iqnq3")
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="3" unique_id=178707011]
-polygon = PackedVector2Array(-185, -118, -199, -115, -198, -94, -178, -45, -103, 0, -79, 15, -25, 8, -3, -7, 22, -5, 35, 19, 58, 26, 98, -7, 128, -72, 105, -140, 89, -144, 80, -127, 62, -89, 45, -85, 25, -43, -13, -35, -62, -12, -91, -34, -117, -53, -165, -109)
-
-[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="." index="4" unique_id=557606750]
-position = Vector2(-100, 63)
-polygon = PackedVector2Array(-169, -103, -192, -97, -197, -76, -174, -49, -140, -26, -99, -5, -71, 11, -25, 13, -26, -14, -62, -12, -126, -80, -111, -104, -145, -103)
-
-[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="." index="5" unique_id=888597362]
-position = Vector2(-100, 63)
-polygon = PackedVector2Array(17, 46, 37, 44, 65, 27, 74, 29, 78, 40, 114, 32, 140, 7, 157, 8, 173, 22, 204, -7, 209, -5, 191, 18, 224, 5, 254, -21, 266, -19, 269, -31, 284, -47, 288, -81, 279, -80, 279, -95, 296, -102, 310, -96, 313, -63, 342, -69, 358, -76, 369, -86, 374, -95, 371, -101, 375, -109, 371, -125, 371, -136, 377, -144, 367, -151, 371, -156, 383.3672, -145.15768, 388, -146, 397, -137, 403, -106, 402, -87, 397, -71, 372, -50, 354, -43, 337, -49, 311, -39, 289, -14, 278, -11, 274, -14, 273, -11, 270, 0, 231, 34, 183, 50, 153, 41, 145, 43, 126, 55, 93, 67, 58, 69, 38, 64, 33, 52, 20, 51)
